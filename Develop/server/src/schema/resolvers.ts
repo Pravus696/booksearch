@@ -1,5 +1,6 @@
 import { AuthinticationError } from 'apollo-server-express';
-import { BookSchema , User } from '../models/User';
+import User from '../models/User';
+import bookSchema from '../models/Book';
 import { signToken } from '../services/auth';
 import bcrypt from 'bcrypt';
 

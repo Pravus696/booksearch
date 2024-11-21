@@ -35,7 +35,7 @@ export const authenticateToken = (req: Request, res: Response, next: NextFunctio
 };
 
 // Auth middleware function for GraphQL
-export const authMiddleware = async ({ req }: { req: Request }) => {
+export const authenticateGraphQL = async ({ req }: { req: Request }) => {
   const authHeader = req.headers.authorization;
 
   if (authHeader) {
