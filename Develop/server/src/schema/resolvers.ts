@@ -1,4 +1,4 @@
-import { User } from '../models/index.js';
+import User from '../models/index.js';
 import { signToken, AuthenticationError } from '../services/auth.js';
 
 // To Do: Define types for the arguments
